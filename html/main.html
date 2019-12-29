@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+		<title>main.html</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css" >
+		<style type="text/css"></style>
+		<script type="text/javascript" src="../js/common/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/common/data.js"></script>
+		<script type="text/javascript" src="../js/common/url.js"></script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="title">
+				<div class="title_left">
+					&nbsp;&nbsp;<b style="color: #aaaaaa;">Welcome to the stab system！</b>
+				</div>
+				<div class="title_right">
+                    <b>Environment:</b>&nbsp;&nbsp;<span id="env"></span><b>&nbsp;&nbsp;|&nbsp;&nbsp;</b>
+					<b>phone:</b>&nbsp;&nbsp;<span id="user_phone"></span><b>&nbsp;&nbsp;|&nbsp;&nbsp;</b>
+					<b>realName:</b>&nbsp;&nbsp;<span id="user_realName"></span><b>&nbsp;&nbsp;|&nbsp;&nbsp;</b>
+					<input type="button" value="Sign out" class="btn" onclick="signOut()">
+				</div>
+			</div>
+			<div class="head">
+				<textarea id="stab_input"></textarea>
+			</div>
+			<div class="neck">
+                <div class="neck_left">
+                    <select id="auditSelect">
+                        <option value="">&nbsp;&nbsp;-- List to be reviewed --&nbsp;&nbsp;</option>
+                    </select>
+                    <input type="button" value=" refresh " class="btn2" onclick="getUserList()">
+                    <input type="button" value=" audit " class="btn2" onclick="audit()">
+                    <input type="button" value=" logs " class="btn2" onclick="logs()">
+                </div>
+                <div class="neck_right">
+                    <input type="button" value="Run Selection" id="executeBtn" class="btn">
+                </div>
+			</div>
+			<div class="body">
+				<table class="tab1" cellpadding="0" cellspacing="0">
+					<thead id="thead1"></thead>
+					<tbody id="tbody1"></tbody>
+				</table>
+			</div>
+			<div class="foot">
+				<span id="resMsg"></span>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="../js/main.js"></script>

@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+		<title>signUp.html</title>
+		<script type="text/javascript" src="../js/common/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/common/url.js"></script>
+		<style type="text/css">
+			a {text-decoration: none; font-size: 12px;}
+			.rightSide{text-align: right; font-size: 12px;}
+			.div1 {
+				width: 30%;
+				height:310px;
+				margin-left: 35%;
+				background-color: #e1e1e1;
+				margin-top: 50px;
+			}
+			.div2 {
+				text-align: center;
+				font-size: 16px;
+				padding-top: 10px;
+				padding-bottom:10px;
+				border-bottom: 1px solid #cccccc;font-weight: bolder;
+			}
+			#environmentSelect {
+				width: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<div class="div2">SIGN UP</div>
+			<table style="border: none;width: 100%;" cellpadding="10" cellspacing="10">
+				<tr>
+					<td class="rightSide">PHONE:</td>
+					<td><input type="text" id="phone" style="width: 200px;" /></td>
+				</tr>
+				<tr>
+					<td class="rightSide">PASSWORD:</td>
+					<td><input type="password" id="password" style="width: 200px;"/></td>
+				</tr>
+				<tr>
+					<td class="rightSide">REAL NAME:</td>
+					<td><input type="text" id="realName" style="width: 200px;"/></td>
+				</tr>
+				<tr>
+					<td class="rightSide">Environment:</td>
+					<td>
+						<select id="environmentSelect">
+							<option value="">&nbsp;&nbsp;-- Environment options --&nbsp;&nbsp;</option>
+							<option value="http://DEV:PORT/stab/">DEV</option>
+							<option value="http://TEST:PORT/stab/">TEST</option>
+							<option value="http://PRE:PORT/stab/">PRE</option>
+							<option value="http://PROD:PORT/stab/">PROD</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="button" value="sign up" style="width: 200px;height:30px;font-size: 16px;" onclick="signUp()" /></td>
+				</tr>
+			</table>
+		</div>
+		<div style="width: 30%;margin-left: 35%;margin-top: 10px;text-align: right; font-size: 12px;">
+			<a href="main.html"> &lt;&lt; back to sign in page</a>
+		</div>
+	</body>
+	</body>
+</html>
+<script type="text/javascript" src="../js/signUp.js"></script>
